@@ -6,17 +6,21 @@ uuid class
  
 ### How to use
 
-Named-based UUID:
+
 
 ```php
- $v3uuid = UUID::v3(UUID::v4(), 'BlahBlahSomeRandomStringBlergBlorg');
- $v5uuid = UUID::v5(UUID::v4(), 'BlahBlahSomeRandomStringBlergBlorg');
-```
+use synapp\info\tools\uuid\uuid;
 
-Pseudo-random UUID:
- 
-```php
- $v4uuid = UUID::v4();
+require_once 'vendor/elcodedocle/uuid/uuid.php';
+
+//Named-based UUID:
+$v3uuid = uuid::v3(uuid::v4(), 'BlahBlahSomeRandomStringBlergBlorg');
+$v5uuid = uuid::v5(uuid::v4(), 'BlahBlahSomeRandomStringBlergBlorg');
+
+//Pseudo-random UUID:
+$v4uuid = uuid::v4();
+
+echo 'UUIDv3: '.$v3uuid."\n".'UUIDv4: '.$v4uuid."\n".'UUIDv5: '.$v5uuid."\n";
 ```
 
 ### Motivation
