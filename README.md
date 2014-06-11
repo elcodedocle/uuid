@@ -6,16 +6,18 @@ uuid class
  
 ### How to use
 
-Named-based UUID.
- 
+Named-based UUID:
+
+```php
  $v3uuid = UUID::v3(UUID::v4(), 'BlahBlahSomeRandomStringBlergBlorg');
  $v5uuid = UUID::v5(UUID::v4(), 'BlahBlahSomeRandomStringBlergBlorg');
+```
+
+Pseudo-random UUID:
  
- Pseudo-random UUID
- 
+```php
  $v4uuid = UUID::v4();
- *
- This class was taken from 
+```
 
 ### Motivation
 
