@@ -10,16 +10,22 @@ namespace synapp\info\tools\uuid;
  * It generates v3, v4, v5 UUIDs
  *
  * Usage:
+ * 
+ * ```php
+ * 
+ *   use synapp\info\tools\uuid\uuid;
+ *   require_once 'path/to/uuid.php';
  *
- * Named-based UUID.
+ *   //Named-based UUID:
  *
- * $v3uuid = UUID::v3(UUID::v4(), 'BlahBlahSomeRandomStringBlergBlorg');
- * $v5uuid = UUID::v5(UUID::v4(), 'BlahBlahSomeRandomStringBlergBlorg');
+ *   $v3uuid = uuid::v3(uuid::v4(), 'BlahBlahSomeRandomStringBlergBlorg');
+ *   $v5uuid = uuid::v5(uuid::v4(), 'BlahBlahSomeRandomStringBlergBlorg');
  *
- * Pseudo-random UUID
+ *   //Pseudo-random UUID:
  *
- * $v4uuid = UUID::v4();
- *
+ *   $v4uuid = uuid::v4();
+ * 
+ *```
  *
  */
 class uuid {
