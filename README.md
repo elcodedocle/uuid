@@ -1,7 +1,7 @@
 uuid class
 ==========
 #####*Universal Unique Identifier v3, v4 and v5 generator*
- Copyright: the PHP Documentation Group
+ Copyright: The PHP Documentation Group<br />
  License: Creative Commons Attribution 3.0 License
  
 ### How to use
